@@ -38,4 +38,23 @@ if place_meeting(x,y + vvelocidade, obj_parede){
 
 y += vvelocidade;
 
+//mudar sprite na hora de andar
+if hvelocidade > 0 {
+	sprite_index = spr_personagem_andando
+}else if hvelocidade <= -1{
+	sprite_index = spr_personagem_andando
+}else if vvelocidade > 0{
+	sprite_index = spr_personagem_andando
+}else if vvelocidade <= -1{
+	sprite_index = spr_personagem_andando
+}else{
+	sprite_index = spr_personagem
+}
+
+//"seguir" cursor do mouse
+var _dire = point_direction(x,y,mouse_x,mouse_y)+45/90;
+
+image_angle = _dire
+
+
 #endregion
