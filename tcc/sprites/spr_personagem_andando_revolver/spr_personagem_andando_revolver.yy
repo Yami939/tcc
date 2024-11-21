@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_personagem_andando",
+  "%Name":"spr_personagem_andando_revolver",
   "bboxMode":2,
-  "bbox_bottom":41,
+  "bbox_bottom":42,
   "bbox_left":23,
-  "bbox_right":38,
+  "bbox_right":39,
   "bbox_top":21,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -24,7 +24,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"7fb8d43a-b4ad-42f9-9897-40083c40e44d","blendMode":0,"displayName":"default","isLocked":false,"name":"7fb8d43a-b4ad-42f9-9897-40083c40e44d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_personagem_andando",
+  "name":"spr_personagem_andando_revolver",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -36,7 +36,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_personagem_andando",
+    "%Name":"spr_personagem_andando_revolver",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,9 +60,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_personagem_andando",
+    "name":"spr_personagem_andando_revolver",
     "playback":1,
-    "playbackSpeed":7.0,
+    "playbackSpeed":8.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b76d3795-4c53-4805-ab61-ba47ad140d42","path":"sprites/spr_personagem_andando/spr_personagem_andando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b76d3795-4c53-4805-ab61-ba47ad140d42","path":"sprites/spr_personagem_andando_revolver/spr_personagem_andando_revolver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a6e4355e-d324-4cff-b33c-a0a6b8d1e4fc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfa75771-408b-4896-bfba-267724b6ad0d","path":"sprites/spr_personagem_andando/spr_personagem_andando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfa75771-408b-4896-bfba-267724b6ad0d","path":"sprites/spr_personagem_andando_revolver/spr_personagem_andando_revolver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5782d8aa-5664-41c9-9aa1-8a5e4f99af3d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87b378dc-c06a-4ca9-a51e-26802807e541","path":"sprites/spr_personagem_andando/spr_personagem_andando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87b378dc-c06a-4ca9-a51e-26802807e541","path":"sprites/spr_personagem_andando_revolver/spr_personagem_andando_revolver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a8ecfa82-c125-4030-82ef-faeeaf0292ba","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0edac81b-29da-460c-8e11-7388dbcb0ba0","path":"sprites/spr_personagem_andando/spr_personagem_andando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0edac81b-29da-460c-8e11-7388dbcb0ba0","path":"sprites/spr_personagem_andando_revolver/spr_personagem_andando_revolver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"592af7dd-a8a1-471e-899c-622b70b2f5d8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

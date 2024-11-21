@@ -9,3 +9,9 @@ vvelocidade = 0;
 velocidade = 2;
 
 direcao = 0;
+
+normal = true;
+revolver = false;
+
+estado = scr_estado_personagem;
+

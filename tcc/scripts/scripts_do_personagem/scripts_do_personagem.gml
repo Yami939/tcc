@@ -1,7 +1,7 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
-function scripts_do_personagem(){
-
+function scr_estado_personagem(){
+if normal = true{
 #region movimentação
 direita = keyboard_check(ord("D"));
 esquerda = keyboard_check(ord("A"));
@@ -19,8 +19,8 @@ vvelocidade = (baixo - cima) * velocidade;
 #region colisão perfeita
 
 //colisão horizontal
-if place_meeting(x + hvelocidade,y,oParede){
-	while !place_meeting(x + sign(hvelocidade), y, oParede){
+if place_meeting(x + hvelocidade,y,obj_parede){
+	while !place_meeting(x + sign(hvelocidade), y, obj_parede){
 		x += sign(hvelocidade);	
 	}
 	
@@ -31,8 +31,8 @@ if place_meeting(x + hvelocidade,y,oParede){
 x += hvelocidade;
 
 //colisão vertical
-if place_meeting(x,y + vvelocidade, oParede){
-	while !place_meeting(x, y + sign(vvelocidade), oParede){
+if place_meeting(x,y + vvelocidade, obj_parede){
+	while !place_meeting(x, y + sign(vvelocidade), obj_parede){
 		y += sign(vvelocidade);
 	}
 	
@@ -42,5 +42,100 @@ if place_meeting(x,y + vvelocidade, oParede){
 
 y += vvelocidade;
 
+//"seguir" cursor do mouse
+var _dire = point_direction(x,y,mouse_x,mouse_y)+45/90;
+
+image_angle = _dire
+
 #endregion
+
+#region trocar sprite
+
+ if keyboard_check(ord("D")){
+	 sprite_index = spr_personagem_andando
+ }else if keyboard_check(ord("A")){
+	 sprite_index = spr_personagem_andando
+ }else if keyboard_check(ord("W")){
+	 sprite_index = spr_personagem_andando
+ }else if keyboard_check(ord("S")){
+	 sprite_index = spr_personagem_andando
+ }else{
+	 sprite_index = spr_personagem
+ }
+
+
+#endregion
+}else if revolver = true{
+#region movimentação
+direita = keyboard_check(ord("D"));
+esquerda = keyboard_check(ord("A"));
+cima = keyboard_check(ord("W"));
+baixo = keyboard_check(ord("S"));
+
+//andar esquerda e direita
+hvelocidade = (direita - esquerda) * velocidade;
+
+//andar cima e baixo
+vvelocidade = (baixo - cima) * velocidade;
+
+#endregion
+
+#region colisão perfeita
+
+//colisão horizontal
+if place_meeting(x + hvelocidade,y,obj_parede){
+	while !place_meeting(x + sign(hvelocidade), y, obj_parede){
+		x += sign(hvelocidade);	
+	}
+	
+		hvelocidade = 0;
+	
+}
+
+x += hvelocidade;
+
+//colisão vertical
+if place_meeting(x,y + vvelocidade, obj_parede){
+	while !place_meeting(x, y + sign(vvelocidade),obj_parede){
+		y += sign(vvelocidade);
+	}
+	
+	vvelocidade = 0;
+	
+}
+
+y += vvelocidade;
+
+
+
+//"seguir" cursor do mouse
+var _dire = point_direction(x,y,mouse_x,mouse_y)+45/90;
+
+image_angle = _dire
+
+if normal = true {
+	sprite_index = spr_personagem
+}else if revolver = true{
+	sprite_index = spr_personagem_revolver
+}
+
+
+#endregion
+
+#region trocar sprite
+
+
+ if keyboard_check(ord("D")){
+	 sprite_index = spr_personagem_andando_revolver
+ }else if keyboard_check(ord("A")){
+	 sprite_index = spr_personagem_andando_revolver
+ }else if keyboard_check(ord("W")){
+	 sprite_index = spr_personagem_andando_revolver
+ }else if keyboard_check(ord("S")){
+	 sprite_index = spr_personagem_andando_revolver
+ }else{
+	 sprite_index = spr_personagem_revolver
+ }
+#endregion
+}
 }
