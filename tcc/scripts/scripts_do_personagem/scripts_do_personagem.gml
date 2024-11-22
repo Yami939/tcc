@@ -113,11 +113,7 @@ var _dire = point_direction(x,y,mouse_x,mouse_y)+45/90;
 
 image_angle = _dire
 
-if normal = true {
-	sprite_index = spr_personagem
-}else if revolver = true{
-	sprite_index = spr_personagem_revolver
-}
+
 
 
 #endregion
@@ -137,5 +133,16 @@ if normal = true {
 	 sprite_index = spr_personagem_revolver
  }
 #endregion
+
+
+#region criar tiro
+if mouse_check_button_pressed(mb_left){
+	var inst = instance_create_layer(x, y, "Instances", obj_tiro);
+	inst.speed = 6;
+	inst.direction = _dire;
+	inst.image_angle = _dire;
+
 }
+}
+#endregion
 }
