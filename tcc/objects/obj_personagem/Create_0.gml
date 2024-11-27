@@ -12,6 +12,7 @@ direcao = 0;
 
 normal = true;
 revolver = false;
+metralhadora = false;
 
 estado = scr_estado_personagem;
 

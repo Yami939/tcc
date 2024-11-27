@@ -1,2 +1,2 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+image_xscale = image_xscale/1.5;
+image_yscale = image_yscale/1.5;
