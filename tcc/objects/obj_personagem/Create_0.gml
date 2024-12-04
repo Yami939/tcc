@@ -16,3 +16,5 @@ metralhadora = false;
 
 estado = scr_estado_personagem;
 
+dano_personagem = 1;
+

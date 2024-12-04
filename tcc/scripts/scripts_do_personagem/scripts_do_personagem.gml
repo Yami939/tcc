@@ -152,6 +152,7 @@ if mouse_check_button_pressed(mb_left){
 	inst.speed = 6;
 	inst.direction = _dire;
 	inst.image_angle = _dire;
+	inst.dano = dano_personagem;
 
 }
 #endregion
@@ -230,7 +231,7 @@ if mouse_check_button(mb_left){
 	inst.speed = 6;
 	inst.direction = _dire;
 	inst.image_angle = _dire;
-	
+	inst.dano = dano_personagem;
 
 }
 }
